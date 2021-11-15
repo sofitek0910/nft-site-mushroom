@@ -102,6 +102,23 @@
     display: none;
 }
 
+.logo-jocker {
+    width: 30%;
+}
+
+/* button animation */
+
+@media only screen and (max-width:1366px) {
+    .navbar_logo {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .navbar_button {
+        font-size: 14px;
+        line-height: 36px;
+    }
+}
+
 @media only screen and (max-width:780px) {
     .navbar_logo {
         font-size: 40px;
