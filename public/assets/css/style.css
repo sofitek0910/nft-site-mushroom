@@ -12,6 +12,15 @@
     src: url('../fonts/Rubik-VariableFont_wght.ttf');
 }
 
+@font-face {
+    font-family: 'headlinefont';
+    src: url('../fonts/ATLANTISBOLD.TTF');
+}
+
+.headline-font {
+    font-family: 'headlinefont'!important;
+}
+
 .rubik-font {
     font-family: 'Rubik';
 }
@@ -23,7 +32,7 @@
     /* font-family: 'megrimfont'; */
     font-style: normal;
     font-weight: 500;
-    font-size: 71.7374px;
+    font-size: 60px;
     line-height: 72px;
     /* or 100% */
     color: #171717;
@@ -172,8 +181,8 @@
 
 @media only screen and (max-width:1366px) {
     .navbar_logo {
-        font-size: 64px;
-        line-height: 64px;
+        font-size: 50px;
+        line-height: 50px;
     }
     .navbar_button {
         font-size: 14px;
@@ -183,8 +192,8 @@
 
 @media only screen and (max-width:780px) {
     .navbar_logo {
-        font-size: 64px;
-        line-height: 64px;
+        font-size: 40px;
+        line-height: 40px;
     }
     .navbar_right {
         display: none;
@@ -196,8 +205,8 @@
 
 @media only screen and (max-width:576px) {
     .navbar_logo {
-        font-size: 36px;
-        line-height: 36px;
+        font-size: 32px;
+        line-height: 32px;
     }
 }
 
@@ -229,8 +238,8 @@
     font-family: 'megrimfont';
     font-style: normal;
     font-weight: 500;
-    font-size: 71.7374px;
-    line-height: 72px;
+    font-size: 50px;
+    line-height: 50px;
     /* or 100% */
     color: #c1c1c1;
 }
@@ -239,15 +248,15 @@
     font-family: 'megrimfont';
     font-style: normal;
     font-weight: 500;
-    font-size: 71.7374px;
-    line-height: 72px;
+    font-size: 50px;
+    line-height: 52px;
     /* or 100% */
     color: #171717;
 }
 
 .font_general {
     color: #171717;
-    font-size: 30px;
+    font-size: 24px;
     line-height: 40px;
     font-family: 'Rubik';
     font-style: normal;
@@ -256,12 +265,12 @@
 
 .mint_button {
     /* MINT */
-    padding: 10px 70px;
+    padding: 10px 30px;
     font-family: 'Rubik';
     font-style: normal;
     font-weight: normal;
-    font-size: 45.5686px;
-    line-height: 46px;
+    font-size: 30px;
+    line-height: 30px;
     /* identical to box height, or 100% */
     color: #FFFFFF;
     background-color: #171717;
@@ -269,7 +278,7 @@
 
 .mint_button:hover {
     color: white;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .footer-font {
@@ -299,20 +308,37 @@
         line-height: 40px;
     }
     .font_bgdefault {
-        font-size: 64px;
-        line-height: 64px;
+        font-size: 40px;
+        line-height: 40px;
     }
     .font_bgundefault {
-        font-size: 64px;
-        line-height: 64px;
+        font-size: 40px;
+        line-height: 40px;
     }
     .font_general {
-        font-size: 24px;
-        line-height: 30px;
+        font-size: 20px;
+        line-height: 25px;
     }
     .mint_button {
-        font-size: 32px;
-        line-height: 46px;
+        font-size: 26px;
+        line-height: 38px;
+    }
+}
+
+@media only screen and (max-width:1100px) {
+    .font_general {
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .font_bgdefault {
+        font-size: 32px!important;
+    }
+
+    .font_bgundefault {
+        font-size: 32px!important;
     }
 }
 
@@ -326,20 +352,20 @@
         line-height: 30px;
     }
     .font_bgdefault {
-        font-size: 48px;
+        font-size: 30px;
         line-height: 64px;
     }
     .font_bgundefault {
-        font-size: 48px;
+        font-size: 30px;
         line-height: 64px;
     }
     .font_general {
-        font-size: 18px;
-        line-height: 30px;
+        font-size: 14px;
+        line-height: 16px;
     }
     .mint_button {
-        font-size: 24px;
-        line-height: 36px;
+        font-size: 20px;
+        line-height: 28px;
     }
 }
 
@@ -353,16 +379,16 @@
         line-height: 24px;
     }
     .font_bgdefault {
-        font-size: 32px;
+        font-size: 24px;
         line-height: 56px;
     }
     .font_bgundefault {
-        font-size: 32px;
+        font-size: 24px;
         line-height: 56px;
     }
     .font_general {
         font-size: 12px;
-        line-height: 24px;
+        line-height: 16px;
     }
 }
 
@@ -592,10 +618,20 @@
 .common_title {
     /*  Coming soon to Solana   */
     font-family: 'Rubik';
-    font-size: 125px;
+    font-size: 50px;
     line-height: 208px;
     font-weight: 600;
     /* or 167% */
+    display: flex;
+    align-items: center;
+    color: #171717;
+}
+
+.common_title_other {
+    font-family: 'Rubik';
+    font-size: 50px;
+    line-height: 100px;
+    font-weight: 600;
     display: flex;
     align-items: center;
     color: #171717;
@@ -617,22 +653,22 @@
 .bot-two {
     width: 17%; 
     z-index: 99; 
-    margin-left: -1.5%;
+    margin-left: 0.5%;
 }
 
 .bot-three {
     width: 15%; 
-    margin-left: 1%;
+    margin-left: 0%;
 }
 
 .bot-four {
-    width: 13.5%; 
-    margin-left: -0.8%;
+    width: 14%; 
+    margin-left: 0.5%;
 }
 
 .bot-five {
     width: 17%; 
-    margin-left: -0.8%;
+    margin-left: 0.2%;
 }
 
 .bot-six {
@@ -647,11 +683,23 @@
         font-size: 84px;
         line-height: 150px;
     }
+
+    .common_title_other {
+        font-family: 'Rubik';
+        font-size: 45px;
+        line-height: 80px;
+    }
 }
 
 @media only screen and (max-width:992px) {
     .common_title {
         font-size: 56px;
+        line-height: 78px;
+        /* or 167% */
+    }
+
+    .common_title_other {
+        font-size: 32px;
         line-height: 78px;
         /* or 167% */
     }
@@ -662,6 +710,11 @@
         font-size: 48px;
         line-height: 78px;
     }
+
+    .common_title_other {
+        font-size: 26px;
+        line-height: 50px;
+    }
     .panel p {
         font-size: 2.6vw !important;
         color: white;
@@ -671,6 +724,13 @@
 @media only screen and (max-width:576px) {
     .common_title {
         font-size: 32px;
+        line-height: 37px;
+        text-align: center;
+        /* or 167% */
+    }
+
+    .common_title_other {
+        font-size: 24px;
         line-height: 37px;
         text-align: center;
         /* or 167% */
@@ -889,32 +949,30 @@ h4 {
 
 
 
-@media(max-width: 1600px) {
+/* @media only screen and (max-width: 1600px) {
     .font_bgdefault {
-        font-size: 60px;
+        font-size: 50px;
     }
+    .font_bgundefault {
+        font-size: 50px;
+    }
+
 
 }
 
-@media(max-width: 1450px) {
+@media only screen and (max-width: 1450px) {
     .font_bgdefault {
-        font-size: 52px;
+        font-size: 46px;
     }
-}
-
-@media(max-width: 1250px) {
-    .font_bgdefault {
-        font-size: 40px;
+    .font_bgundefault {
+        font-size: 50px;
     }
-}
 
-@media(max-width: 1100px) {
-    .font_bgdefault {
-        font-size: 32px;
-    }
-}
+} */
 
-@media(max-width: 576px) {
+
+
+@media only screen and (max-width: 576px) {
     .pc {
         display: none;
     }
@@ -999,7 +1057,7 @@ h4 {
      font-family: 'megrimfont';
      font-style: normal;
      font-weight: 500;
-     font-size: 40px;
+     font-size: 32px;
      line-height: 40px;
      margin-left: 50px;
 }
@@ -1019,6 +1077,13 @@ h4 {
 
 .owl-carousel-block {
     padding: 30px;
+}
+
+.rubberBand {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: middle;
 }
 
 /* main  ENd */

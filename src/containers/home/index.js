@@ -12,10 +12,10 @@ import {
  
 const Home = props => (
   <div className="main-page">
-      <nav class="navbar container-fluid p-4 wow fadeInDown">
+      <nav class="navbar container-fixed p-4 wow fadeInDown">
         <a href="">
-            <div class="navbar_logo float-left">
-                MUSHROOM NFT
+            <div class="navbar_logo float-left headline-font">
+                <img class="logo-jocker" src="./assets/images/logo.png"/> SHROOMIE
             </div>
         </a>
     </nav>
@@ -23,27 +23,32 @@ const Home = props => (
         <div class="row mx-0 px-0">
             <div class="col-md-7 d-flex align-items-center">
                 <div class="pl-md-3">
-                    <div class="pb-md-3 wow fadeInUp">
-                        <span class="font_default">The World Famous Game NFT</span>
-                    </div>
-                    <div class="py-xl-5 py-md-3 py-2  wow fadeInUp ">
-                        <span class="font_bgdefault line-height-15">ABOUT THE</span> &nbsp;&nbsp;&nbsp;<span class="font_bgundefault line-height-15">MUSHROOM</span>
+                    <div class="wow fadeInUp">
+                        <span class="font_bgdefault line-height-15">Mint your Shroomie</span> &nbsp;&nbsp;&nbsp;<div class="font_bgundefault line-height-15">at a fragtion of BNB</div>
                     </div>
                     <div class="pt-md-3  wow fadeInUp">
                         <span class="font_general line-height-18">
-                            Mushroom is a NFT created by a development team of 16 people who are behind the creation of an e-game peer-to-peer card game. Mushroom is based on a community of people, but unlike regular fun coins, the Mushroom has a clear purpose and vision.
+                        Shroomies are mysterious creatures that spawned out of nowhere in every part of the universe. 
+                        Legends say they are so adorable that not even the most fearsome monsters dare to hurt them. 
+                        There exists 4 Leaders among the cute Shroomies, one governing in each of the four major regions of Lucid Land Universe, namely ISO 998, RUXA, Magiallo and Inferno. 
+                        Obviously, Shroomies at the end are still monsters and by nature, they don’t follow a strict hierarchy. 
+                        Thus, chaos broke out as they ran wild across the universe. 
+                        Now it’s time to go out and catch one for yourself and tame it as your adorable partner!
                         </span>
                     </div>
                 </div>
             </div>
             <div class="col-md-5 mt-md-0 mt-5 pr-5 mr-0 wow rubberBand">
-                <img class="img-thumbnail" src="./assets/media/character.gif" class="w-100"/>
+                <div>
+                    <img class="img-thumbnail" src="./assets/media/character.gif" class="w-100"/>
+                </div>
+
             </div>
         </div>
     </section>
     <section class="slide-section">
-        <div class="common_title justify-content-center wow zoomInUp">
-            Our NFTS
+        <div class="common_title justify-content-center wow zoomInUp headline-font">
+            Meet our Shroomies
         </div>
         <div class="owl-carousel owl-theme owl-carousel-block">
             <div class="item">      
@@ -250,40 +255,21 @@ const Home = props => (
         </div>
     </section>
 
-    <section class="common mt-5 container-fluid p-0 position-relative commingsoon-section">
-        <div class="common_title justify-content-center wow zoomInUp">
-            Coming soon
+    <section class="common mt-5 container-fixed p-0 position-relative commingsoon-section">
+        <div class="common_title_other justify-content-center wow zoomInUp headline-font">
+            THE ANTIWHALE SYSTEM 
         </div>
-        <div class="wow zoomInUp d-flex justify-content-center common_subtitle" >
-            <div class="mt-2 ml-10 d-flex align-items-center justify-content-center">
-                THE ANTIWHALE SYSTEM TO PROTECT OUR HOLDERS!
-                <div class="mushroom-nft">MUSHROOM NFT</div>
-                {/* <!-- <img src="./assets/media/superjackpot.jpg" class="ml-4 em-image"> --> */}
+        <div class="common_title_other justify-content-center wow zoomInUp headline-font">
+            TO PROTECT OUR HOLDERS!
+        </div>
+        <div className="row m-0">
+            <div class="col-md-6 col-sm-12 text-center wow zoomInUp">
+                <button class="mint_button btn mt-5">MINT YOUR SHROOMIE</button>
+            </div>
+            <div class="col-md-6 col-sm-12 text-center wow zoomInUp">
+                <button class="mint_button btn mt-5">MINT YOUR HERO</button>
             </div>
         </div>
-        <div class="common_back mt-5 pt-md-5">
-            <div class=" mx-0 mt-5 pt-md-5 align-items-end d-flex">
-                <div class="p-0 bot-one">
-                    <img src="./assets/media/output11.png" class="w-100 wow fadeInRight" data-wow-delay="1.6s"/>
-                </div>
-                <div class="p-0 bot-two">
-                    <img src="./assets/media/output12.png" class="w-100 wow fadeInRight" data-wow-delay="0.5s"/>
-                </div>
-                <div class="px-2 bot-three">
-                    <img src="./assets/media/output13.png" class="w-100 wow fadeInLeft" data-wow-delay="0.3s"/>
-                </div>
-                <div class="bot-four">
-                    <img src="./assets/media/output14.png" class="w-100 wow fadeInRight" data-wow-delay="0.3s"/>                    
-                </div>
-                <div class="px-1 bot-five">
-                    <img src="./assets/media/output15.png" class="w-100 wow fadeInLeft" data-wow-delay="1.4s"/>
-                </div>
-                <div class="p-0 bot-six">
-                    <img src="./assets/media/output16.png" class="w-100 wow fadeInLeft" data-wow-delay="1s"/>
-                </div>
-            </div>
-        </div>
-        <img class="common_bg_image" src="./assets/images/add_images/background.png" alt=""/>
     </section>
   </div>
 )
